@@ -58,7 +58,7 @@ window.Morse = (function () {
     return {
         encode: function (text) {
             return text.toUpperCase().split('')
-                .filter(letter => source.hasOwnProperty(letter))
+                .filter(letter => letter in source)
                 .map(letter => letterToMarkup(source[letter]).join(markup.space))
                 .join(byLetter())
         },
