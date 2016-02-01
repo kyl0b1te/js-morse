@@ -66,7 +66,7 @@ window.Morse = (function () {
         decode: function (source) {
             return source
                 .split(byWord())
-                .map(word => word.split(byLetter()).filter(Boolean).map(letterFromMarkup).join(''))
+                .map(word => word.split(byLetter()).filter(String).map(letterFromMarkup).join(''))
                 .join(byWord())
         }
     };
