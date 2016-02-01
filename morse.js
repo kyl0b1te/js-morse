@@ -50,7 +50,8 @@ window.Morse = (function () {
     {
         return getLetter(
             letter_markup.split(markup.space)
-                .map(symbol => symbol == markup.dot ? 1 : 0)
+                .map(symbol => symbol == markup.dot)
+                .map(Number)
                 .join('')
         )
     }
