@@ -17,19 +17,14 @@ window.Morse = (function () {
         space: ' '
     };
 
-    function times(symbol, number)
-    {
-        return Array.apply(null, {length: number}).map(el => symbol).join('')
-    }
-
     function byWord()
     {
-        return times(markup.space, 7)
+        return markup.space.repeat(7)
     }
 
     function byLetter()
     {
-        return times(markup.space, 3)
+        return markup.space.repeat(3)
     }
 
     function getMarkup(letter)
@@ -47,7 +42,7 @@ window.Morse = (function () {
     function letterToMarkup(letter)
     {
         return !letter ? [byWord()] : getMarkup(letter)
-            .map(point => point == 1 ? markup.dot : times(markup.dash, 3))
+            .map(point => point == 1 ? markup.dot : markup.dash.repeat(3))
     }
 
     function letterFromMarkup(letter_markup)
