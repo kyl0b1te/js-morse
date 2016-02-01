@@ -35,8 +35,7 @@ window.Morse = (function () {
     function getLetter(markup_code)
     {
         return Object.keys(source)
-                .filter(letter => source[letter].toString(2) == '1' + markup_code + '1')
-                .shift()
+            .find(letter => source[letter].toString(2) == '1' + markup_code + '1')
     }
 
     function letterToMarkup(letter)
