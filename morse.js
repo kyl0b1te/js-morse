@@ -2,7 +2,7 @@ window.Morse = (function () {
 
     'use strict';
 
-    var source = {
+    const source = {
         A: 13, B: 47, C: 43, D: 23, E: 7, F: 59,
         G: 19, H: 63, I: 15, J: 49, K: 21, L: 55,
         M: 9, N: 11, O: 17, P: 51, Q: 37, R: 27,
@@ -11,7 +11,7 @@ window.Morse = (function () {
         5: 127, 6: 95, 7: 79, 8: 71, 9: 67, 0: 65, ' ': 0
     };
 
-    var markup = {
+    const markup = {
         dot: '.',
         dash: '-',
         space: ' '
