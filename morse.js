@@ -29,7 +29,9 @@ window.Morse = (function () {
 
     function getMarkup(letter)
     {
-        return (letter.toString(2) + '').split('').slice(1, -1)
+        return letter.toString(2)
+            .split('')
+            .slice(1, -1)
     }
 
     function getLetter(markup_code)
