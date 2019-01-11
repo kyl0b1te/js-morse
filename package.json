@@ -1,0 +1,33 @@
+{
+  "name": "jsmorse",
+  "version": "1.0.0",
+  "description": "morse code encoder/decoder node.js realization",
+  "main": "morse/morse.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint morse/morse.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhikiri/js-morse.git"
+  },
+  "keywords": [
+    "morse",
+    "encoder",
+    "decoder"
+  ],
+  "author": "zhikiri <zhikiri.dev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhikiri/js-morse/issues"
+  },
+  "homepage": "https://github.com/zhikiri/js-morse#readme",
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.12.3",
+    "mocha": "^5.2.0"
+  }
+}
